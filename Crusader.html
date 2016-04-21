@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html>
+<header>
+<meta charset="UTF-8" />
+<title>Hellion</title>
+<link rel="stylesheet" href="..\..\css\Crusader\Crusader.css" />
+<a name="Menu"></a>
+<img src="..\..\imagenes\logo.png" alt="logo.png" id="logo"/>
+<audio autoplay>
+  <source src="..\..\multimedia\audio\vo_narr_town_rec_cru.mp3" type="audio/mp3">
+  Your browser does not support the audio tag.
+</audio>
+</header>
+<body>
+
+<nav>
+<ul>
+<li><a href="../../index.html">Home</a></li>
+<li><a href="../Classes.html">Classes</a></li>
+<li><a href="../Items/Items.html">Items</a></li>
+<li><a href="../Locations.html">Locations</a></li>
+<li><a href="../Formulario.html">Form</a></li>
+<li><a href="../Media.html">Media</a></li>
+</ul>
+</nav>
+
+<span id="salida"><a href="#Menu"><img src="..\..\imagenes\salida.png" alt="salida.png"/></a></span>
+
+
+<aside>	
+<table>
+<tr>
+<th colspan="6" class="rojo"> <h1>Crusader</h1></th>
+</tr>
+<tr>
+<td colspan="6" id="Retrato_Heroe"><img src="..\..\imagenes\Hero_classes\Crusader\Crusader.png" alt="Hellion.png"/></td>
+</tr>
+<tr>
+<th colspan="6" class="rojo"> Base Stats</th>
+</tr>
+<tr>
+<td class="TablaResaltar" style="color:orange;">Resolve</td>
+<td class="TablaResaltar">1</td>
+<td class="TablaResaltar">2</td>
+<td class="TablaResaltar">3</td>
+<td class="TablaResaltar">4</td>
+<td class="TablaResaltar">5</td>
+</tr>
+<tr>
+<td class="verde">MAX HP</td>
+<td>33</td>
+<td>40</td>
+<td>47</td>
+<td>54</td>
+<td>61</td>
+</tr>
+<tr>
+<td class="verde">DODGE</td>
+<td>5</td>
+<td>10</td>
+<td>15</td>
+<td>20</td>
+<td>25</td>
+</tr>
+<tr>
+<td class="TablaResaltar">PROT</td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+</tr>
+<tr>
+<td class="naranja">SPD</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td class="TablaResaltar">ACC MOD</td>
+<td>+0</td>
+<td>+0</td>
+<td>+0</td>
+<td>+0</td>
+<td>+0</td>
+</tr>
+<tr>
+<td class="naranja">CRIT</td>
+<td>5%</td>
+<td>5.5%</td>
+<td>6%</td>
+<td>6.5%</td>
+<td>7%</td>
+</tr>
+<tr>
+<td class="naranja">DMG</td>
+<td>6-12</td>
+<td>7-14</td>
+<td>8-16</td>
+<td>9-17</td>
+<td>10-19</td>
+</tr>
+<tr>
+<th colspan="6" class="rojo">Resistances</th>
+</tr>
+<tr>
+<td colspan="2" class="TablaResaltar" style="color:orange;"><img alt="stun.png" src="..\..\imagenes\Legend\Poptext_stun.png">Stun</td>
+<td>40%</td>
+<td colspan="2" class="TablaResaltar" style="color:orange;"><img alt="Poptext move.png" src="..\..\imagenes\Legend\Poptext_move.png"/>Move</td>
+<td>40%</td>
+</tr>
+<tr>
+<td colspan="2" class="TablaResaltar" style="color:orange;"><img alt="Poptext poison.png" src="..\..\imagenes\Legend\Poptext_poison.png"/> Blight</td>
+<td>40%</td>
+<td colspan="2" class="TablaResaltar" style="color:orange;"><img alt="Poptext bleed.png" src="..\..\imagenes\Legend\Poptext_bleed.png"/>Bleed</td>
+<td>40%</td>
+</tr>
+<tr>
+<td colspan="2" class="TablaResaltar" style="color:orange;"><img alt="Poptext disease.png" src="..\..\imagenes\Legend\Poptext_disease.png"/>Disease</td>
+<td>30%</td>
+<td colspan="2" class="TablaResaltar" style="color:orange;"><img alt="Poptext debuff.png" src="..\..\imagenes\Legend\Poptext_debuff.png"/>Debuff</td>
+<td>30%</td>
+</tr>
+<tr>
+<td colspan="2" class="TablaResaltar" style="color:orange;"><img alt="Deathsdoor.png"  src="..\..\imagenes\Legend\deathsdoor.png"/>Death Blow</td>
+<td>67%</td>
+<td colspan="2" class="TablaResaltar" style="color:orange;"><img alt="Tray trap disarm.png" src="..\..\imagenes\Legend\Tray_trap_disarm.png"/>Trap</td>
+<td>10%</td>
+</tr>
+<tr>
+<th colspan="6" class="rojo">Other information</th>
+</tr>
+<tr>
+<td colspan="2" class="TablaResaltar">Movement</td>
+<td colspan="4">1 forwards, 1 backwards.</td>
+</tr>
+<tr>
+<td colspan="2" class="TablaResaltar">Religious</td>
+<td colspan="4">Yes</td>
+</tr>
+<tr>
+<td colspan="2" class="TablaResaltar">Provisions</td>
+<td colspan="4">Holy Water</td>
+</tr>
+</table>
+</aside>
+<section>
+<article id="show_menu">
+<input type="checkbox" id="spoiler8"></input>
+<label for="spoiler8" class="decorar" >Show Menu</label>
+<div class="spoiler">
+<ul>
+<li><a href="#Combat">1 Combat Skills</a></li>
+<li><a href="#Camping">2 Camping Skills</a>
+<ul>
+<li><a href="#Shared">2.1 Shared Skills</a></li>
+<li><a href="#Unique">2.2 Unique Skills</a></li>
+</ul>
+</li>
+<li><a href="#Weapons">3 Weapons and Armor</a></li>
+<li><a href="#Customisation">4 Customisation</a></li>
+</ul>
+</div>
+</article>
+
+<article>
+<a name="Combat"></a>
+<h2>Combat Skills</h2>
+
+<div class="Tabla">
+<table>
+<tr>
+<th colspan="9" class="rojo">Smite</th>
+</tr>
+<tr>
+<td rowspan="2"><img alt="Hellion wicked hack.png" src="..\..\imagenes\Hero_classes\Crusader\Combat_Skills\Smite.png"/></td>
+<td class="decorar">Range</td>
+<td class="decorar">Rank</td>
+<td class="decorar">Target</td>
+<td class="decorar">Damage</td>
+<td class="decorar">Accuracy</td>
+<td class="decorar">Crit mod</td>
+<td class="decorar">Effect</td>
+<td class="decorar">Self</td>
+</tr>
+<tr>
+<td>Melee</td>
+<td>
+<div>
+<img alt="Grey dot.png" src="..\..\imagenes\Positions\Grey_dot.png"/>
+<img alt="Grey dot.png" src="..\..\imagenes\Positions\Grey_dot.png" />
+<img alt="Yellow dot.png" src="..\..\imagenes\Positions\Yellow_dot.png" />
+<img alt="Yellow dot.png" src="..\..\imagenes\Positions\Yellow_dot.png"/>
+</div>
+</td>
+<td>
+<div>
+<img alt="Red dot.png" src="..\..\imagenes\Positions\Red_dot.png"/>
+<img alt="Red dot.png" src="..\..\imagenes\Positions\Red_dot.png"/>
+<img alt="Grey dot.png" src="..\..\imagenes\Positions\Grey_dot.png"/>
+<img alt="Grey dot.png" src="..\..\imagenes\Positions\Grey_dot.png"/>
+</div>
+</td>
+<td> 100%</td>
+<td> 85</td>
+<td> </td>
+<td>+15% DMG vs Unholy</td>
+</tr>
+</table>
+
+<input type="checkbox" id="spoiler1"></input>
+<label for="spoiler1" class="decorar" >Further levels</label>
+<div class="spoiler">
+<table class="skills">
+<tr>
+<td class="decorar">Level 2</td>
+<td> 100%</td>
+<td> 90</td>
+<td> </td>
+<td>+20% DMG vs Unholy</td>
+</tr>
+<tr>
+<td class="decorar">Level 3</td>
+<td> 100%</td>
+<td> 95</td>
+<td> 1%</td>
+<td>+25% DMG vs Unholy</td>
+</tr>
+<tr>
+<td class="decorar">Level 4</td>
+<td> 100%</td>
+<td> 100</td>
+<td> 2%</td>
+<td>+30% DMG vs Unholy</td>
+</tr>
+<tr>
+<td class="decorar">Level 5</td>
+<td> 100%</td>
+<td> 105</td>
+<td> 2%</td>
+<td>+35% DMG vs Unholy</td>
+</tr>
+</table>
+</div>
+</div>
+
+<div class="Tabla">
+<table>
+<tr>
+<th colspan="9" class="rojo">Zealous Accusation</th>
+</tr>
+<tr>
+<td rowspan="2"><img alt="Hellion iron swan.png" src="..\..\imagenes\Hero_classes\Crusader\Combat_Skills\Zealous_Accusation.png"/></td>
+<td class="decorar">Range</td>
+<td class="decorar">Rank</td>
+<td class="decorar">Target</td>
+<td class="decorar">Damage</td>
+<td class="decorar">Accuracy</td>
+<td class="decorar">Crit mod</td>
+<td class="decorar">Effect</td>
+<td class="decorar">Self</td>
+</tr>
+<tr>
+<td>Melee</td>
+<td>
+<div>
+<img alt="Grey dot.png" src="..\..\imagenes\Positions\Grey_dot.png"/>
+<img alt="Grey dot.png" src="..\..\imagenes\Positions\Grey_dot.png" />
+<img alt="Yellow dot.png" src="..\..\imagenes\Positions\Yellow_dot.png"/>
+<img alt="Yellow dot.png" src="..\..\imagenes\Positions\Yellow_dot.png"/>
+</div>
+</td>
+<td>
+<div>
+<img alt="Red dot.png" src="..\..\imagenes\Positions\Red_dotr.png"/>
+<img alt="Red dot.png" src="..\..\imagenes\Positions\Red_dotl.png"/>
+<img alt="Grey dot.png" src="..\..\imagenes\Positions\Grey_dot.png"/>
+<img alt="Grey dot.png" src="..\..\imagenes\Positions\Grey_dot.png"/>
+</div>
+</td>
+<td> -40%</td>
+<td> 85</td>
+<td> </td>
+</tr>
+</table>
+
+<input type="checkbox" id="spoiler2"></input>
+<label for="spoiler2" class="decorar" >Further levels</label>
+<div class="spoiler">
+<table class="skills">
+<tr>
+<td class="decorar">Level 2</td>
+<td> -40%</td>
+<td> 90</td>
+<td> </td>
+</tr>
+<tr>
+<td class="decorar">Level 3</td>
+<td> -40%</td>
+<td> 95</td>
+<td> 1%</td>
+</tr>
+<tr>
+<td class="decorar">Level 4</td>
+<td> -40%</td>
+<td> 100</td>
+<td> 1%</td>
+</tr>
+<tr>
+<td class="decorar">Level 5</td>
+<td> -40%</td>
+<td> 105</td>
+<td> 2%</td>
+</tr>
+</table>
+</div>
+</div>
+
+<div class="Tabla">
+<table>
+<tr>
+<th colspan="9" class="rojo">Stunning Blow</th>
+</tr>
+<tr>
+<td rowspan="2"><img alt="Hellion barbaric yawp.png" src="..\..\imagenes\Hero_classes\Crusader\Combat_Skills\Stunning_Blow.png"/></td>
+<td class="decorar">Range</td>
+<td class="decorar">Rank</td>
+<td class="decorar">Target</td>
+<td class="decorar">Damage</td>
+<td class="decorar">Accuracy</td>
+<td class="decorar">Crit mod</td>
+<td class="decorar">Effect</td>
+<td class="decorar">Self</td>
+</tr>
+<tr>
+<td>Melee</td>
+<td>
+<div>
+<img alt="Grey dot.png" src="..\..\imagenes\Positions\Grey_dot.png"/>
+<img alt="Grey dot.png" src="..\..\imagenes\Positions\Grey_dot.png" />
+<img alt="Yellow dot.png" src="..\..\imagenes\Positions\Yellow_dot.png" />
+<img alt="Yellow dot.png" src="..\..\imagenes\Positions\Yellow_dot.png"/>
+</div>
+</td>
+<td>
+<div>
+<img alt="Red dotr.png" src="..\..\imagenes\Positions\Red_dotr.png"/>
+<img alt="Red dotl.png" src="..\..\imagenes\Positions\Red_dotl.png"/>
+<img alt="Grey dot.png" src="..\..\imagenes\Positions\Grey_dot.png"/>
+<img alt="Grey dot.png" src="..\..\imagenes\Positions\Grey_dot.png"/>
+</div>
+</td>
+<td> -75%</td>
+<td> 90</td>
+<td> </td>
+<td>Stun (100% base)</td>
+</tr>
+</table>
+
+<input type="checkbox" id="spoiler3"></input>
+<label for="spoiler3" class="decorar" >Further levels</label>
+<div class="spoiler">
+<table class="skills">
+<tr>
+<td class="decorar">Level 2</td>
+<td> -75%</td>
+<td> 100</td>
+<td> </td>
+<td>Stun (110% base)</td>
+</tr>
+<tr>
+<td class="decorar">Level 3</td>
+<td> -75%</td>
+<td> 105</td>
+<td> 1%</td>
+<td>Stun (119% base)</td>
+</tr>
+<tr>
+<td class="decorar">Level 4</td>
+<td> -75%</td>
+<td> 110</td>
+<td> 1%</td>
+<td>Stun (129% base)</td>
+</tr>
+<tr>
+<td class="decorar">Level 5</td>
+<td> -75%</td>
+<td> 115</td>
+<td> 2%</td>
+<td>Stun (139% base)</td>
+</tr>
+</table>
+</div>
+</div>
+
+<div class="Tabla">
+<table>
+<tr>
+<th colspan="9" class="azul">Bulwark of Faith</th>
+</tr>
+<tr>
+<td rowspan="2"><img alt="Hellio if it bleeds.png" src="..\..\imagenes\Hero_classes\Crusader\Combat_Skills\Bulwark_of_Faith.png"/></td>
+<td class="decorar">Range</td>
+<td class="decorar">Rank</td>
+<td class="decorar">Target</td>
+<td class="decorar">Damage</td>
+<td class="decorar">Accuracy</td>
+<td class="decorar">Crit mod</td>
+<td class="decorar">Effect</td>
+<td class="decorar">Self</td>
+</tr>
+<tr>
+<td>Melee</td>
+<td>
+<div>
+<img alt="Grey dot.png" src="..\..\imagenes\Positions\Grey_dot.png"/>
+<img alt="Grey dot.png" src="..\..\imagenes\Positions\Grey_dot.png"/>
+<img alt="Yellow dot.png" src="..\..\imagenes\Positions\Yellow_dot.png" />
+<img alt="Yellow dot.png" src="..\..\imagenes\Positions\Yellow_dot.png"/>
+</div>
+</td>
+<td>
+SELF
+</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> Torch +6</td>
+<td>+25% PROT (1 round)<br/>
+Mark Target</td>
+</tr>
+</table>
+
+<input type="checkbox" id="spoiler4"></input>
+<label for="spoiler4" class="azul" >Further levels</label>
+<div class="spoiler">
+<table class="skills">
+<tr>
+<td class="decorar">Level 2</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> Torch +6</td>
+<td>+25% PROT (1 round)<br/>
+Mark Target</td>
+</tr>
+<tr>
+<td class="decorar">Level 3</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> Torch +6</td>
+<td>+25% PROT (1 round)<br/>
+Mark Target</td>
+</tr>
+<tr>
+<td class="decorar">Level 4</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> Torch +6</td>
+<td>+25% PROT (1 round)<br/>
+Mark Target</td>
+</tr>
+<tr>
+<td class="decorar">Level 5</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> Torch +6</td>
+<td>+25% PROT (1 round)<br/>
+Mark Target</td>
+</tr>
+</table>
+</div>
+</div>
+
+<div class="Tabla">
+<table>
+<tr>
+<th colspan="9" class="verde">Battle Heal</th>
+</tr>
+<tr>
+<td rowspan="2"><img alt="Hellion breakthrough.png" src="..\..\imagenes\Hero_classes\Crusader\Combat_Skills\Battle_Heal.png"/></td>
+<td class="decorar">Range</td>
+<td class="decorar">Rank</td>
+<td class="decorar">Target</td>
+<td class="decorar">Heal</td>
+<td class="decorar">Accuracy</td>
+<td class="decorar">Crit mod</td>
+<td class="decorar">Effect</td>
+<td class="decorar">Self</td>
+</tr>
+<tr>
+<td>Melee</td>
+<td>
+<div>
+<img alt="Grey dot.png" src="..\..\imagenes\Positions\Grey_dot.png"/>
+<img alt="Grey dot.png" src="..\..\imagenes\Positions\Grey_dot.png"/>
+<img alt="Yellow dot.png" src="..\..\imagenes\Positions\Yellow_dot.png" />
+<img alt="Yellow dot.png" src="..\..\imagenes\Positions\Yellow_dot.png"/>
+</div>
+</td>
+<td>
+<div>
+<img alt="Yellow dot.png" src="..\..\imagenes\Positions\Yellow_dot.png"/>
+<img alt="Yellow dot.png" src="..\..\imagenes\Positions\Yellow_dot.png"/>
+<img alt="Yellow dot.png" src="..\..\imagenes\Positions\Yellow_dot.png"/>
+<img alt="Yellow dot.png" src="..\..\imagenes\Positions\Yellow_dot.png"/>
+</div>
+</td>
+<td> 2-2</td>
+<td> </td>
+<td> </td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<input type="checkbox" id="spoiler5"></input>
+<label for="spoiler5" class="verde" >Further levels</label>
+<div class="spoiler">
+<table class="skills">
+<tr>
+<td class="decorar">Level 2</td>
+<td> 2-3</td>
+</tr>
+<tr>
+<td class="decorar">Level 3</td>
+<td> 3-4</td>
+</tr>
+<tr>
+<td class="decorar">Level 4</td>
+<td> 4-4</td>
+</tr>
+<tr>
+<td class="decorar">Level 5</td>
+<td> 5-6</td>
+</tr>
+</table>
+</div>
+</div>
+
+<div class="Tabla">
+<table>
+<tr>
+<th colspan="9" class="rojo">Holy Lance</th>
+</tr>
+<tr>
+<td rowspan="2"><img alt="Hellion adrenaline rush.png" src="..\..\imagenes\Hero_classes\Crusader\Combat_Skills\Holy_Lance.png"/></td>
+<td class="decorar">Range</td>
+<td class="decorar">Rank</td>
+<td class="decorar">Target</td>
+<td class="decorar">Heal</td>
+<td class="decorar">Crit mod</td>
+<td class="decorar">Effect</td>
+<td class="decorar">Self</td>
+</tr>
+<tr>
+<td>Melee</td>
+<td>
+<div>
+<img alt="Yellow dot.png" src="..\..\imagenes\Positions\Yellow_dot.png" />
+<img alt="Yellow dot.png" src="..\..\imagenes\Positions\Yellow_dot.png" />
+<img alt="Yellow dot.png" src="..\..\imagenes\Positions\Grey_dot.png" />
+<img alt="Yellow dot.png" src="..\..\imagenes\Positions\Grey_dot.png"/>
+</div>
+</td>
+<td> 
+<div>
+<img alt="Yellow dot.png" src="..\..\imagenes\Positions\Grey_dot.png" />
+<img alt="Yellow dot.png" src="..\..\imagenes\Positions\Grey_dot.png" />
+<img alt="Yellow dot.png" src="..\..\imagenes\Positions\Red_dot.png" />
+<img alt="Yellow dot.png" src="..\..\imagenes\Positions\Red_dot.png"/>
+</div>
+</td>
+<td> 100%</td>
+<td> 85</td>
+<td> 5%</td>
+<td> +15% DMG vs Unholy<br/>
+Forward 1</td>
+</tr>
+</table>
+
+<input type="checkbox" id="spoiler6"></input>
+<label for="spoiler6" class="decorar" >Further levels</label>
+<div class="spoiler">
+<table class="skills">
+<tr>
+<td class="decorar">Level 2</td>
+<td> 100%</td>
+<td> 85</td>
+<td> 5%</td>
+<td> +20% DMG vs Unholy</td>
+<td> Forward 1</td>
+</tr>
+<tr>
+<td class="decorar">Level 3</td>
+<td> 100%</td>
+<td> 85</td>
+<td> 5%</td>
+<td> +25% DMG vs Unholy</td>
+<td> Forward 1</td>
+</tr>
+<tr>
+<td class="decorar">Level 4</td>
+<td> 100%</td>
+<td> 85</td>
+<td> 5%</td>
+<td> +30% DMG vs Unholy</td>
+<td> Forward 1</td>
+</tr>
+<tr>
+<td class="decorar">Level 5</td>
+<td> 100%</td>
+<td> 85</td>
+<td> 5%</td>
+<td> +35% DMG vs Unholy</td>
+<td> Forward 1</td>
+</tr>
+</table>
+</div>
+</div>
+
+<div class="Tabla">
+<table>
+<tr>
+<th colspan="9" class="verde">Inspiring Cry</th>
+</tr>
+<tr>
+<td rowspan="2"><img alt="Hellion bleed out.png" src="..\..\imagenes\Hero_classes\Crusader\Combat_Skills\Inspiring_Cry.png"/></td>
+<td class="decorar">Range</td>
+<td class="decorar">Rank</td>
+<td class="decorar">Target</td>
+<td class="decorar">Heal</td>
+<td class="decorar">Accuracy</td>
+<td class="decorar">Crit mod</td>
+<td class="decorar">Effect</td>
+<td class="decorar">Self</td>
+</tr>
+<tr>
+<td>Melee</td>
+<td>
+<div>
+<img alt="Yellow dot.png" src="..\..\imagenes\Positions\Yellow_dot.png"/>
+<img alt="Yellow dot.png" src="..\..\imagenes\Positions\Yellow_dot.png"/>
+<img alt="Yellow dot.png" src="..\..\imagenes\Positions\Yellow_dot.png"/>
+<img alt="Yellow dot.png" src="..\..\imagenes\Positions\Yellow_dot.png"/>
+</div>
+</td>
+<td>
+<div>
+<img alt="Yellow dot.png" src="..\..\imagenes\Positions\Yellow_dot.png"/>
+<img alt="Yellow dot.png" src="..\..\imagenes\Positions\Yellow_dot.png"/>
+<img alt="Yellow dot.png" src="..\..\imagenes\Positions\Yellow_dot.png"/>
+<img alt="Yellow dot.png" src="..\..\imagenes\Positions\Yellow_dot.png"/>
+</div>
+</td>
+<td> 1-1</td>
+<td> </td>
+<td> </td>
+<td> Stress Heal +6<br/>
+ Torch +5</td>
+<td> </td>
+</tr>
+</table>
+
+<input type="checkbox" id="spoiler7"></input>
+<label for="spoiler7" class="verde" >Further levels</label>
+<div class="spoiler">
+<table class="skills">
+<tr>
+<td class="decorar">Level 2</td>
+<td> 1-1</td>
+<td> </td>
+<td> </td>
+<td> Stress Heal +7<br/>
+ Torch +6</td>
+<td> </td>
+</tr>
+<tr>
+<td class="decorar">Level 3</td>
+<td> 1-2</td>
+<td> </td>
+<td> </td>
+<td> Stress Heal +8<br/>
+ Torch +7</td>
+<td> </td>
+</tr>
+<tr>
+<td class="decorar">Level 4</td>
+<td> 1-2</td>
+<td> </td>
+<td> </td>
+<td> Stress Heal +9<br/>
+ Torch +8</td>
+<td> </td>
+</tr>
+<tr>
+<td class="decorar">Level 5</td>
+<td> 2-2</td>
+<td> </td>
+<td> </td>
+<td> Stress Heal +10<br/>
+ Torch +10</td>
+<td> </td>
+</tr>
+</table>
+</div>
+</div>
+
+</article>
+
+<article>
+<a name="Camping"></a>
+<h2>Camping Skills</h2>
+<h2>Shared Camping Skills</h2>
+<a name="Shared"></a>
+<table>
+<tr>
+<th colspan="6" class="amarillo">Encourage</th>
+</tr>
+<tr>
+<td rowspan="3"><img alt="Ability encourage.png" src="..\..\imagenes\Common\Shared_camp_skills\Ability_encourage.png"/></td>
+</tr>
+<tr>
+<th class="decorar">Time Cost</th>
+<th class="decorar">Target</th>
+<th class="decorar">Description</th>
+</tr>
+<tr>
+<td>2</td>
+<td>One Companion</td>
+<td>Reduce stress by 15</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<th colspan="6" class="amarillo">Wound Care</th>
+</tr>
+<tr>
+<td rowspan="3"><img alt="Ability Wound Care.png" src="..\..\imagenes\Common\Shared_camp_skills\Ability_wound_care.png"/></td>
+</tr>
+<tr>
+<th class="decorar">Time Cost</th>
+<th class="decorar">Target</th>
+<th class="decorar">Description</th>
+</tr>
+<tr>
+<td>2</td>
+<td>One Companion</td>
+<td>Heal 15%<br/>
+Removes target bleeding<br/>
+Removes target blight</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<th colspan="6" class="amarillo">Pep Talk</th>
+</tr>
+<tr>
+<td rowspan="3"><img alt="Ability Pep Talk.png" src="..\..\imagenes\Common\Shared_camp_skills\Ability_pep_talk.png"/></td>
+</tr>
+<tr>
+<th class="decorar">Time Cost</th>
+<th class="decorar">Target</th>
+<th class="decorar">Description</th>
+</tr>
+<tr>
+<td>2</td>
+<td>One Companion</td>
+<td>+15% Stress Resist (4 combats)</td>
+</tr>
+</table>
+</article>
+
+<article>
+<a name="Unique"></a>
+<h2>Unique Camping Skills</h2>
+
+<table>
+<tr>
+<th colspan="6" class="amarillo">Unshakable Leader</th>
+</tr>
+<tr>
+<td rowspan="3"><img alt="Ability Battle Trance.png" src="..\..\imagenes\Hero_classes\Crusader\Camping_Skills\Ability_unshakeable_leader.png"/></td>
+</tr>
+<tr>
+<th class="decorar">Time Cost</th>
+<th class="decorar">Target</th>
+<th class="decorar">Description</th>
+</tr>
+<tr>
+<td>3</td>
+<td>All Companions</td>
+<td>+25% Stress Resist (4 combats))</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<th colspan="6" class="amarillo">Stand Tall</th>
+</tr>
+<tr>
+<td rowspan="3"><img alt="Ability Revel.png" src="..\..\imagenes\Hero_classes\Crusader\Camping_Skills\Ability_stand_tall.png"/></td>
+</tr>
+<tr>
+<th class="decorar">Time Cost</th>
+<th class="decorar">Target</th>
+<th class="decorar">Description</th>
+</tr>
+<tr>
+<td>4</td>
+<td>Self </td>
+<td>-15% Stress<br/>
+Removes Death's Door debuff on target</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<th colspan="6" class="amarillo">Zealous Speech</th>
+</tr>
+<tr>
+<td rowspan="3"><img alt="Ability Reject the Gods.png" src="..\..\imagenes\Hero_classes\Crusader\Camping_Skills\Ability_zealous_speech.png"/></td>
+</tr>
+<tr>
+<th class="decorar">Time Cost</th>
+<th class="decorar">Target</th>
+<th class="decorar">Description</th>
+</tr>
+<tr>
+<td>5</td>
+<td>Self<br/>
+ All Companions</td>
+<td>-15 stress on self<br/>
+-15 stress on other party members<br/>
+-15% Stress DMG on other party members (4 combats)</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<th colspan="6" class="amarillo">Zealous Vigil</th>
+</tr>
+<tr>
+<td rowspan="3"><img alt="Ability Sharpen Spear.png" src="..\..\imagenes\Hero_classes\Crusader\Camping_Skills\Ability_zealous_vigil.png"/></td>
+</tr>
+<tr>
+<th class="decorar">Time Cost</th>
+<th class="decorar">Target</th>
+<th class="decorar">Description</th>
+</tr>
+<tr>
+<td>4</td>
+<td>Self</td>
+<td>-25 stress on self<br/>
+-15 stress on self if afflicted<br/>
+Prevents a nighttime ambush</td>
+</tr>
+</table>
+</article>
+
+<article class="armas">
+<a name="Weapons"></a>
+<h2>Weapons and Armor</h2>
+
+<table>
+<tr>
+<th colspan="15" class="azul">Great Sword</th>
+</tr>
+<tr>
+<th colspan="3"> Level 1</th>
+<th colspan="3"> Level 2</th>
+<th colspan="3"> Level 3</th>
+<th colspan="3"> Level 4</th>
+<th colspan="3"> Level 5</th>
+</tr>
+<tr>
+<td rowspan="4"><img alt="Eqp weapon 0hel (1).png" src="..\..\imagenes\Hero_classes\Crusader\Equipement\Eqp_weapon_0cru_(1).png" /></td>
+<td colspan="2" id="nombre_equipo">Battered Longsword</td>
+<td rowspan="4"><img alt="Eqp weapon 0hel (2).png" src="..\..\imagenes\Hero_classes\Crusader\Equipement\Eqp_weapon_0cru_(2).png" /></td>
+<td colspan="2" id="nombre_equipo">Longsword</td>
+<td rowspan="4"><img alt="Eqp weapon 0hel (3).png" src="..\..\imagenes\Hero_classes\Crusader\Equipement\Eqp_weapon_0cru_(3).png" /></td>
+<td colspan="2" id="nombre_equipo">Questing Longsword</td>
+<td rowspan="4"><img alt="Eqp weapon 0hel (4).png" src="..\..\imagenes\Hero_classes\Crusader\Equipement\Eqp_weapon_0cru_(4).png" /></td>
+<td colspan="2" id="nombre_equipo">Greatsword</td>
+<td rowspan="4"><img alt="Eqp weapon 0hel (5).png" src="..\..\imagenes\Hero_classes\Crusader\Equipement\Eqp_weapon_0cru_(5).png" /></td>
+<td colspan="2" id="nombre_equipo">The Long Crusade</td>
+</tr>
+<tr>
+<td id="valor_equipo">DMG base:</td>
+<td id="dato_equipo">6-12</td>
+<td id="valor_equipo">DMG base:</td>
+<td id="dato_equipo">7-14</td>
+<td id="valor_equipo">DMG base:</td>
+<td id="dato_equipo">8-16</td>
+<td id="valor_equipo">DMG base:</td>
+<td id="dato_equipo">9-17</td>
+<td id="valor_equipo">DMG base:</td>
+<td id="dato_equipo">10-19</td>
+</tr>
+<tr>
+<td id="valor_equipo">CRT base:</td>
+<td id="dato_equipo">5%</td>
+<td id="valor_equipo">CRT base:</td>
+<td id="dato_equipo">5.5%</td>
+<td id="valor_equipo">CRT base:</td>
+<td id="dato_equipo">6%</td>
+<td id="valor_equipo">CRT base:</td>
+<td id="dato_equipo">6.5%</td>
+<td id="valor_equipo">CRT base:</td>
+<td id="dato_equipo">7%</td>
+</tr>
+<tr>
+<td id="valor_equipo">SPD base:</td>
+<td id="dato_equipo">1</td>
+<td id="valor_equipo">SPD base:</td>
+<td id="dato_equipo">1</td>
+<td id="valor_equipo">SPD base:</td>
+<td id="dato_equipo">2</td>
+<td id="valor_equipo">SPD base:</td>
+<td id="dato_equipo">2</td>
+<td id="valor_equipo">SPD base:</td>
+<td id="dato_equipo">3</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<th colspan="15" class="azul">Chain and Plate</th>
+</tr>
+<tr>
+<th colspan="3"> Level 1</th>
+<th colspan="3"> Level 2</th>
+<th colspan="3"> Level 3</th>
+<th colspan="3"> Level 4</th>
+<th colspan="3"> Level 5</th>
+</tr>
+<tr>
+<td rowspan="4"><img alt="Eqp armour 0hel.png" src="..\..\imagenes\Hero_classes\Crusader\Equipement\Eqp_armour_0cru.png" /></td>
+<td colspan="2" id="nombre_equipo">Rusty Hauberk</td>
+<td rowspan="4"><img alt="Eqp armour 1hel.png" src="..\..\imagenes\Hero_classes\Crusader\Equipement\Eqp_armour_1cru.png" /></td>
+<td colspan="2" id="nombre_equipo">Chainmail</td>
+<td rowspan="4"><img alt="Eqp armour 2hel.png" src="..\..\imagenes\Hero_classes\Crusader\Equipement\Eqp_armour_2cru.png" /></td>
+<td colspan="2" id="nombre_equipo">Chain and Plate</td>
+<td rowspan="4"><img alt="Eqp armour 3hel.png" src="..\..\imagenes\Hero_classes\Crusader\Equipement\Eqp_armour_3cru.png" /></td>
+<td colspan="2" id="nombre_equipo">Plate</td>
+<td rowspan="4"><img alt="Eqp armour 4hel.png" src="..\..\imagenes\Hero_classes\Crusader\Equipement\Eqp_armour_4cru.png" /></td>
+<td colspan="2" id="nombre_equipo">Zealous Conviction</td>
+</tr>
+<tr>
+<td id="valor_equipo">DODGE  base:</td>
+<td id="dato_equipo">5</td>
+<td id="valor_equipo">DODGE  base:</td>
+<td id="dato_equipo">10</td>
+<td id="valor_equipo">DODGE  base:</td>
+<td id="dato_equipo">15</td>
+<td id="valor_equipo">DODGE  base:</td>
+<td id="dato_equipo">20</td>
+<td id="valor_equipo">DODGE  base:</td>
+<td id="dato_equipo">25</td>
+</tr>
+<tr>
+<td id="valor_equipo">HP base:</td>
+<td id="dato_equipo">33</td>
+<td id="valor_equipo">HP base:</td>
+<td id="dato_equipo">40</td>
+<td id="valor_equipo">HP base:</td>
+<td id="dato_equipo">47</td>
+<td id="valor_equipo">HP base:</td>
+<td id="dato_equipo">54</td>
+<td id="valor_equipo">HP base:</td>
+<td id="dato_equipo">67</td>
+</tr>
+</table>
+</article>
+
+<article #id="contenedor">
+<a name="Customisation"></a>
+<h2>Customisation</h2>
+
+<div id="girando">
+<img alt="55px-Hellion1,png" src="..\..\imagenes\Hero_classes\Crusader\Customisation\61px-Crusader1.png" />
+<img alt="55px-Hellion2.png" src="..\..\imagenes\Hero_classes\Crusader\Customisation\61px-Crusader2.png" />
+<img alt="55px-Hellion3.png" src="..\..\imagenes\Hero_classes\Crusader\Customisation\61px-Crusader3.png" />
+<img alt="55px-Hellion4.png" src="..\..\imagenes\Hero_classes\Crusader\Customisation\61px-Crusader4.png" />
+</div>
+</article>
+
+<footer>
+<img src="..\..\imagenes\Separator.png" alt="footer.png"/>
+</footer>
+
+</section>	
+
+
+
+
+</body>
+</html>
