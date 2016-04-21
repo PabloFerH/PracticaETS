@@ -1,0 +1,532 @@
+/*body*/
+*{
+	margin: 0px;
+}
+body{
+	background-image: url(../../imagenes/fondo.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	color: white;
+}
+aside{
+	float: right;
+	margin-right: 1%;
+}
+section{
+	
+	width: 78%;
+	position: absolute;
+	top: auto;
+}
+footer img{
+	margin-top: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 128%;
+    height: 5px;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+/*Menu*/
+article:nth-child(1){
+	background-color: rgba(0,0,0,0.7);	
+	display: block;
+	width: 20%;
+	margin-left: 10%;
+	margin-top: 1%;
+}
+article:nth-child(1) li:hover{
+	background-color: rgba(50,0,0,0.5);
+}
+
+#salida{
+	position: fixed;
+	bottom: 0px;
+	z-index:1;
+}
+/*logo*/
+#logo{
+	position: relative;
+	left: 25%;
+	background-color: rgba(0,0,0,0.7);	
+	width: 49%;
+}
+
+/*nav*/
+nav{
+	background-color: rgba(0,0,0,0.7);	
+	color: white;
+	display: block;
+	width: 49%;
+	margin-left: 25%;
+	padding-bottom: 0px;
+}
+li{
+	list-style: none;
+}
+nav li{
+	float: left;
+	padding-right: 3%;
+	padding-left: 3%;
+	font-size: 24px;
+
+}
+nav li:hover{
+	background-color: rgba(50,0,0,0.5);
+	border-radius: 50%;
+}
+nav li a{
+line-height: 50px;
+margin: 0px;
+}
+nav ul{
+	padding: 0px;
+	height: 50px;
+
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*h*/
+h2{
+	text-align: center;
+	text-transform: uppercase;
+	margin: 1%;
+}
+/*tablas*/
+table{
+	background-color: rgba(0,0,0,0.7);	
+	border: 1px solid black;	
+	text-align: center;
+	margin-top: 1%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+
+/*tabla aside*/
+.TablaResaltar{
+	background-color: #6E6E6E;
+}
+
+
+/*Tabla habilidades*/
+table div img{
+	margin: 0px;
+	float: left;
+	border-collapse: collapse;
+}
+.skills{
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+	width: 70%;
+}
+
+.decorar{
+	background-color: rgba(50,0,0,1);
+}
+
+.Tabla{
+	width: 100%;	
+}
+
+/*Tabla armaduras*/
+#nombre_equipo{
+	background-color: rgba(30,0,0,1);
+}
+#valor_equipo{
+	background-color: rgba(100,0,0,1);
+}
+#dato_equipo{
+	background-color: rgba(50,10,10,1);
+}
+
+/*colores de las tablas*/
+.rojo{
+	background-color: #B40404;
+}
+.amarillo{
+	background-color: #868A08;
+}
+.verde{
+	background-color: #088A08;
+}
+.azul{
+	background-color: #072191;
+}
+.naranja{
+	background-color: #FF4000;
+}
+
+/*Tablas de equipo*/
+.armas table{
+	width: 125%;
+	margin-left: 1%;
+}
+
+/*SPOILERS*/
+
+/*spoiler1*/
+/* Ocultar botón radio */
+input[id^="spoiler1"]{
+display: none;
+}
+/* Estilo botón clicable */
+input[id^="spoiler1"] + label {
+display: block;
+width: 66.2%;
+margin-left: auto;
+margin-right: auto;
+padding: 5px 20px;
+text-align: center;
+}
+/* Estilo botón cuando su INPUT está seleccionado */
+input[id^="spoiler1"]:checked + label {
+color: #333;
+background: #ccc;
+}
+/* Estilo caja SPOILER (inicialmente oculto) */
+input[id^="spoiler1"] ~ .spoiler {
+width: 90%;
+height: 0px;
+overflow: hidden;
+opacity: 0;
+margin: 10px auto 0; 
+}
+/* Estilo caja SPOILER cuando su INPUT está seleccionado */
+input[id^="spoiler1"]:checked + label + .spoiler{
+height: auto;
+opacity: 1;
+display: inline;
+}
+
+/*spoiler2*/
+input[id^="spoiler2"]{
+display: none;
+}
+/* Estilo botón clicable */
+input[id^="spoiler2"] + label {
+display: block;
+width: 66.2%;
+padding: 5px 20px;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+/* Estilo botón cuando su INPUT está seleccionado */
+input[id^="spoiler2"]:checked + label {
+color: #333;
+background: #ccc;
+}
+/* Estilo caja SPOILER (inicialmente oculto) */
+input[id^="spoiler2"] ~ .spoiler {
+width: 90%;
+height: 0px;
+overflow: hidden;
+opacity: 0;
+margin: 10px auto 0; 
+}
+/* Estilo caja SPOILER cuando su INPUT está seleccionado */
+input[id^="spoiler2"]:checked + label + .spoiler{
+height: auto;
+opacity: 1;
+display: inline;
+}
+
+/*spoiler3*/
+input[id^="spoiler"]{
+display: none;
+}
+/* Estilo botón clicable */
+input[id^="spoiler3"] + label {
+display: block;
+width: 66.2%;
+padding: 5px 20px;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+/* Estilo botón cuando su INPUT está seleccionado */
+input[id^="spoiler3"]:checked + label {
+color: #333;
+background: #ccc;
+}
+/* Estilo caja SPOILER (inicialmente oculto) */
+input[id^="spoiler3"] ~ .spoiler {
+width: 66.2%;
+height: 0px;
+overflow: hidden;
+opacity: 0;
+margin: 10px auto 0; 
+}
+/* Estilo caja SPOILER cuando su INPUT está seleccionado */
+input[id^="spoiler3"]:checked + label + .spoiler{
+height: auto;
+width: 66.2%;
+opacity: 1;
+display: inline;
+}
+
+/*spoiler4*/
+input[id^="spoiler"]{
+display: none;
+}
+/* Estilo botón clicable */
+input[id^="spoiler4"] + label {
+display: block;
+width: 66.2%;
+padding: 5px 20px;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+/* Estilo botón cuando su INPUT está seleccionado */
+input[id^="spoiler4"]:checked + label {
+color: #333;
+background: #ccc;
+}
+/* Estilo caja SPOILER (inicialmente oculto) */
+input[id^="spoiler4"] ~ .spoiler {
+width: 90%;
+height: 0px;
+overflow: hidden;
+opacity: 0;
+margin: 10px auto 0; 
+}
+/* Estilo caja SPOILER cuando su INPUT está seleccionado */
+input[id^="spoiler4"]:checked + label + .spoiler{
+height: auto;
+opacity: 1;
+display: inline;
+}
+
+/*spoiler5*/
+input[id^="spoiler"]{
+display: none;
+}
+/* Estilo botón clicable */
+input[id^="spoiler5"] + label {
+display: block;
+width: 66.2%;
+padding: 5px 20px;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+/* Estilo botón cuando su INPUT está seleccionado */
+input[id^="spoiler5"]:checked + label {
+color: #333;
+background: #ccc;
+}
+/* Estilo caja SPOILER (inicialmente oculto) */
+input[id^="spoiler5"] ~ .spoiler {
+width: 90%;
+height: 0px;
+overflow: hidden;
+opacity: 0;
+margin: 10px auto 0; 
+}
+/* Estilo caja SPOILER cuando su INPUT está seleccionado */
+input[id^="spoiler5"]:checked + label + .spoiler{
+height: auto;
+opacity: 1;
+display: inline;
+}
+
+/*spoiler6*/
+input[id^="spoiler"]{
+display: none;
+}
+/* Estilo botón clicable */
+input[id^="spoiler6"] + label {
+display: block;
+width: 66.2%;
+padding: 5px 20px;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+/* Estilo botón cuando su INPUT está seleccionado */
+input[id^="spoiler6"]:checked + label {
+color: #333;
+background: #ccc;
+}
+/* Estilo caja SPOILER (inicialmente oculto) */
+input[id^="spoiler6"] ~ .spoiler {
+width: 90%;
+height: 0px;
+overflow: hidden;
+opacity: 0;
+margin: 10px auto 0; 
+}
+/* Estilo caja SPOILER cuando su INPUT está seleccionado */
+input[id^="spoiler6"]:checked + label + .spoiler{
+height: auto;
+opacity: 1;
+display: inline;
+}
+
+/*spoiler7*/
+input[id^="spoiler"]{
+display: none;
+}
+/* Estilo botón clicable */
+input[id^="spoiler7"] + label {
+display: block;
+width: 66.2%;
+padding: 5px 20px;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+/* Estilo botón cuando su INPUT está seleccionado */
+input[id^="spoiler7"]:checked + label {
+color: #333;
+background: #ccc;
+}
+/* Estilo caja SPOILER (inicialmente oculto) */
+input[id^="spoiler7"] ~ .spoiler {
+width: 90%;
+height: 0px;
+overflow: hidden;
+opacity: 0;
+margin: 10px auto 0; 
+}
+/* Estilo caja SPOILER cuando su INPUT está seleccionado */
+input[id^="spoiler7"]:checked + label + .spoiler{
+height: auto;
+opacity: 1;
+display: inline;
+}
+
+/*spoiler8 (Menu)*/
+input[id^="spoiler"]{
+display: none;
+}
+/* Estilo botón clicable */
+input[id^="spoiler8"] + label {
+display: block;
+width: 81%;
+padding: 5px 20px;
+text-align: center;
+}
+/* Estilo botón cuando su INPUT está seleccionado */
+input[id^="spoiler8"]:checked + label {
+color: #333;
+background: #ccc;
+}
+/* Estilo caja SPOILER (inicialmente oculto) */
+input[id^="spoiler8"] ~ .spoiler {
+width: 90%;
+height: 0px;
+overflow: hidden;
+opacity: 0;
+margin: 10px auto 0; 
+}
+/* Estilo caja SPOILER cuando su INPUT está seleccionado */
+input[id^="spoiler8"]:checked + label + .spoiler{
+height: auto;
+opacity: 1;
+display: inline;
+}
+
+/*Animacion de la customizacion*/
+
+#contenedor {
+   margin: 30px auto;
+   perspective: 600px;
+}
+
+#girando {
+   margin: 20px auto;
+	width: 200px;
+	padding: 30px;
+	
+	animation-name: girando;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 5s;
+	transform-style: preserve-3d;
+}
+#girando:hover {
+	animation-play-state: paused;
+}
+
+#girando img {
+	position: absolute;
+	width: 150px;
+	height: 230px;
+	border: 10px solid rgba(50,0,0,0.7);	
+}
+
+#girando img:nth-child(1){
+	transform: rotateY(0deg) translateZ(90px);
+}
+#girando img:nth-child(2) {
+	transform: rotateY(-90deg) translateZ(90px);
+}
+#girando img:nth-child(3){
+	transform: rotateY(-180deg) translateZ(90px);
+}
+#girando img:nth-child(4){
+	transform: rotateY(-270deg) translateZ(90px);
+}
+
+@keyframes girando {
+   from,20% { transform: rotateY(0deg);   }
+   30%,40%  { transform: rotateY(90deg);  }
+   50%,60%  { transform: rotateY(180deg); }
+   70%,80% 	{ transform: rotateY(270deg); }
+   90%,to	{ transform: rotateY(360deg); }
+}
+/*Responsividad*/
+@media all and (max-width:999px){
+
+aside{
+display: none;
+}
+section{
+left: 12%;
+}
+#show_menu{
+display: none;
+}
+imput{
+display: none;
+}
+input[id^="spoiler"]{
+display: none;
+}
+input[id^="spoiler"] + label {
+display: none;
+}
+nav li a{
+line-height: 50px;
+font-size: 11.7px;;
+}
+.armas table{
+	display: none;
+}
+.armas h2{
+	display: none;
+}
+#salida{
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	z-index:1;
+}
+footer img{
+
+	margin-left: auto;
+	margin-right: auto;
+	width: 110%;
+}
+}
+
