@@ -7,7 +7,7 @@ body{
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	color: white;
+	color: green;
 }
 aside{
 	float: right;
@@ -15,7 +15,7 @@ aside{
 }
 section{
 	
-	width: 78%;
+	width: 80%;
 	position: absolute;
 	top: auto;
 }
